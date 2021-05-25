@@ -11,7 +11,7 @@ public class MaxsizeOfIsland {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 1) {
-                    int area = findMaxArea(grid, i, j);
+                    int area = findArea(grid, i, j);
                     maxArea = Math.max(maxArea, area);
                 }
             }
@@ -19,8 +19,8 @@ public class MaxsizeOfIsland {
         return maxArea;
     }
 
-    public static int findMaxArea(int[][] grid, int i, int j) {
-        int count = 1;
+    public static int findArea(int[][] grid, int i, int j) {
+        int area = 1; //Since there is at least one cell the area is at least 1
 
         if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == 0) {
             return 0;
@@ -28,13 +28,13 @@ public class MaxsizeOfIsland {
 
         grid[i][j] = 0;
 
-        int countAbove = findMaxArea(grid, i + 1, j);//Below
-        int countBelow = findMaxArea(grid, i - 1, j); //Above
-        int countLeft = findMaxArea(grid, i, j - 1); //left
-        int countRight = findMaxArea(grid, i, j + 1); //right
+        int areaAbove = findArea(grid, i + 1, j);//Below
+        int areaBelow = findArea(grid, i - 1, j); //Above
+        int areaLeft = findArea(grid, i, j - 1); //left
+        int areaRight = findArea(grid, i, j + 1); //right
 
-        count = count + countAbove + countBelow + countLeft + countRight;
-        return count;
+        area = area + areaAbove + areaBelow + areaLeft + areaRight;
+        return area;
     }
 
 
@@ -57,6 +57,6 @@ public class MaxsizeOfIsland {
 
 
         int maxArea = maxAreaofIsland(grid);
-        System.out.println("Anser " + maxArea);
+        System.out.println("Answer " + maxArea);
     }
 }
