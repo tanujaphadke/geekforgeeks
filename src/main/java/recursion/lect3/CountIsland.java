@@ -1,4 +1,4 @@
-package arrays.lect3;
+package recursion.lect3;
 
 import java.util.ArrayList;
 import java.util.List;
