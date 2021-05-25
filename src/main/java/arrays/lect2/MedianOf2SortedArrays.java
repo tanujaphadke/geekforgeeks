@@ -1,4 +1,4 @@
-package geekforgeeks.arrays.lect2;
+package arrays.lect2;
 
 //https://www.youtube.com/watch?v=yD7wV8SyPrc
 public class MedianOf2SortedArrays {

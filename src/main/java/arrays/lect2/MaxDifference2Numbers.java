@@ -1,4 +1,4 @@
-package geekforgeeks.arrays.lect2;
+package arrays.lect2;
 
 //https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
 public class MaxDifference2Numbers {

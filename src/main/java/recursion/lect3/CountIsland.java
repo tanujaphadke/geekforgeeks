@@ -19,5 +19,5 @@ public class CountIsland {
 
     //Diagonal is not considered as a neighbor. If you want to include diagonals also then
     //those coordinates can be easily added.
-   
+
 }

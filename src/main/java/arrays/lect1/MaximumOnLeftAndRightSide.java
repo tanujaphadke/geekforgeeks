@@ -1,8 +1,7 @@
 package arrays.lect1;
 
 /**
- * https://www.educative.io/edpresso/the-trapping-rainwater-algorithm-in-cpp-python-and-java
- * https://www.educative.io/edpresso/the-trapping-rainwater-algorithm-in-cpp-python-and-java
+ *
  */
 public class MaximumOnLeftAndRightSide {
 

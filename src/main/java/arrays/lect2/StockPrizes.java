@@ -1,4 +1,4 @@
-package geekforgeeks.arrays.lect2;
+package arrays.lect2;
 
 //  int[] stockPrices = new int[] {10, 7, 5, 8, 11, 9};
 //
