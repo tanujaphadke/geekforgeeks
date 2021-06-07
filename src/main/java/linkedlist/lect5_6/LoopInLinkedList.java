@@ -70,14 +70,14 @@ public class LoopInLinkedList {
 
 		int noOfNodesInLoop = countNodesInLoop(HEAD);
 
-		while (i < noOfNodesInLoop){
+		while (i < noOfNodesInLoop){ //the fast node is at noOfNodesIntheLoop + 1 position
 			fastNode = fastNode.next;
 			i++;
 		}
 		// 1--> 15--> 12 --> 21 --> 10 --> 66 --> 77
 		//					 ^ --------------------|
 		System.out.println("Now Start node " + startNode.val + " Fast Node " + fastNode.val);
-		//Now the start node is at HEAD and the fast node is at "noOfNodesInLoop"the
+		//Now the start node is at HEAD and the fast node is at "noOfNodesInLoop" +1 th
 		//position.
 		while(startNode != fastNode){
 			startNode= startNode.next;
