@@ -1,4 +1,7 @@
-package trees.lecture8;
+package trees.lecture10;
+
+import trees.lecture8.PopulateTree;
+import trees.lecture8.TreeNode;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
