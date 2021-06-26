@@ -29,8 +29,8 @@ public class PopulateTree {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
-        root. left.left = new TreeNode(4);
-        root. left.right = new TreeNode(5);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
         return root;
 
     }
@@ -256,6 +256,42 @@ Output: 4
         root.left.left = new TreeNode(5);
         root.left.right = new TreeNode(5);
         root.right.right = new TreeNode(5);
+
+        return root;
+    }
+
+    /*      Input : k = 5       Root of below binary tree:
+                   1
+                /     \
+              3        -1
+            /   \     /   \
+           2     1   4     5
+                /   / \     \
+               1   1   2     6
+
+        Output :
+        3 2         3 1 1       1 3 1         4 1         1 -1 4 1        -1 4 2      5              1 -1 5
+     */
+    public static TreeNode populateTreeForKPathSum() {
+        TreeNode root = new TreeNode(1);
+        TreeNode left = new TreeNode(3);
+        root.left = left;
+        left.left = new TreeNode(2);
+        TreeNode leftright = new TreeNode(1);
+        left.right = leftright;
+        leftright.left = new TreeNode(1);
+
+        TreeNode right = new TreeNode(-1);
+        root.right = right;
+        TreeNode rightLeft = new TreeNode(4);
+        right.left = rightLeft;
+
+        TreeNode rightRight = new TreeNode(5);
+        right.right = rightRight;
+
+        rightLeft.left = new TreeNode(1);
+        rightLeft.right = new TreeNode(2);
+        rightRight.right = new TreeNode(6);
 
         return root;
     }
