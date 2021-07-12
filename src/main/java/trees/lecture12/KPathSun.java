@@ -2,7 +2,7 @@ package trees.lecture12;
 
 import java.util.List;
 import java.util.Vector;
-
+//https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/
 public class KPathSun {
     static void printVector( List<Integer> v, int i)
     {
@@ -68,7 +68,7 @@ public class KPathSun {
     // Driver code
     public static void main(String args[])
     {
-        Node root = new Node(1);
+        Node root = new Node(5);
         root.left = new Node(3);
         root.left.left = new Node(2);
         root.left.right = new Node(1);

@@ -13,7 +13,7 @@ import java.util.List;
 //b = 10.
 //Output : 12
 
-public class PathBetweenTwoNodes {
+public class PathBetweenTwoNodesConfusedVersion {
     private static TreeNode root;
 
     public static List<TreeNode> getPath(TreeNode root, TreeNode someNode) {

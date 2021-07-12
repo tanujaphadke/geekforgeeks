@@ -181,7 +181,8 @@ public class AllPathsProblems {
      */
     private static List<List<Integer>> getListoflist(TreeNode root) {
         List<List<Integer>> allPaths = new ArrayList<>();
-        List<Integer> path = new ArrayList(); path.add(0,root.val);
+        List<Integer> path = new ArrayList();
+        path.add(0,root.val);
         allPaths.add(0,path);
         return allPaths;
     }
@@ -258,12 +259,4 @@ public class AllPathsProblems {
 
     }
 
-    /**
-     * Find all K-sum paths in a B-tree
-     * http://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/
-     */
-
-    public void kSumPaths(TreeNode root) {
-
-    }
 }
