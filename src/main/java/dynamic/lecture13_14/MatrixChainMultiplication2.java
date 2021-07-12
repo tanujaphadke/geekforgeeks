@@ -95,26 +95,6 @@ public class MatrixChainMultiplication2 {
         initMatrices(totalNoOfMatrices);
         System.out.println("This minimum cost of matrix multiplication is " + optimalSolution(totalNoOfMatrices));
 
-        StringBuilder sb = new StringBuilder();
-        StringBuilder sb2 = new StringBuilder();
-        String[] matrixArray = new String[optimizedValue[0].length];
-        for (int i = 0; i < optimizedValue[0].length; i++) {
-            sb.append(optimizedValue[0][i].partitionAt + " ");
-            sb2.append("A" + i + " ");
-            matrixArray[i] = "A" + i;
-        }
-
-        System.out.println(sb.toString());
-        System.out.print(sb2.toString());
-        StringBuilder sb3 = new StringBuilder();
-        for (int i = optimizedValue[0].length - 1; i > 0; i--) {
-            matrixArray[0] = "(" + matrixArray[0];
-            matrixArray[optimizedValue[0][i].partitionAt] =
-                    matrixArray[optimizedValue[0][i].partitionAt] + ")";
-        }
-        for (int i = 0; i < matrixArray.length; i++) {
-            System.out.print(matrixArray[i]);
-        }
 
     }
 
