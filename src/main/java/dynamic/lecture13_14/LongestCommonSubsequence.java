@@ -22,10 +22,14 @@ public class LongestCommonSubsequence {
         for (int i = 0; i <= m; i++) {
             for (int j = 0; j <= n; j++) {
                 if (i == 0 || j == 0)
-                    L[i][j] = 0;
+                    L[i][j] = 0; // The first row and first column will be made 0
                 else if (X[i - 1] == Y[j - 1])
-                    L[i][j] = L[i - 1][j - 1] + 1;
+                    //We go one row up and one column up --> This is the count of lcs after removing
+                    //the matching characters.
+                    L[i][j] = 1 + L[i - 1][j - 1] ;
                 else
+                    //We go one row up and column is same --> This means we are including the last character of Y
+                    //We go one column up  and row is same --> This means we are including the last character of X
                     L[i][j] = max(L[i - 1][j], L[i][j - 1]);
             }
         }
