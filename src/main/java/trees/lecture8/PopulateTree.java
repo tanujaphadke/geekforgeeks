@@ -111,7 +111,7 @@ public class PopulateTree {
        20 40 60 80 */
 
     public static TreeNode populateBST() {
-        TreeNode root = new TreeNode(1);
+        TreeNode root = new TreeNode(50);
         root.left = new TreeNode(30);
         root.right = new TreeNode(70);
         root.left.left = new TreeNode(20);
