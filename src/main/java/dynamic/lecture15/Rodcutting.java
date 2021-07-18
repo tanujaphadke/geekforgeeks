@@ -1,4 +1,4 @@
-package dynamic.lecture13_14;
+package dynamic.lecture15;
 
 public class Rodcutting {
 
@@ -23,8 +23,8 @@ public class Rodcutting {
         for (int i = 1; i <= n; ++i) {
             int max_val = Integer.MIN_VALUE;
 
-            for (int j = 0; j < i; ++j) {
-                max_val = Math.max(max_val, price[j] + optimalPrice[i - j - 1]);
+            for (int k = 0; k < i; ++k) {
+                max_val = Math.max(max_val, price[k] + optimalPrice[i - k - 1]);
             }
 
             optimalPrice[i] = max_val;

@@ -1,2 +1,4 @@
-package dynamic.lecture15;public class CoinExchange {
+package dynamic.lecture15;
+
+public class CoinExchange {
 }

@@ -1,4 +1,4 @@
-package dynamic.lecture13_14;
+package dynamic.lecture15;
 
 //Largest sum of non-adjacent numbers
 //3 7 4 6 5  => 3+ 4 + 6 = 16
