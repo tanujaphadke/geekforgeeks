@@ -1,4 +1,4 @@
-package dynamic.lecture15;
+package dynamic.lecture16;
 
 // Java program to solve fractional Knapsack Problem
 
