@@ -1,7 +1,7 @@
 package dynamic.lecture15;
 
 public class Rodcutting {
-
+//Recursive appraoch
     static int cutRod(int[] price, int n) {
         if (n <= 0) {
             return 0;
@@ -16,6 +16,7 @@ public class Rodcutting {
         }
     }
 
+    //tabular method - DP appraoch
     static int cutRodDP(int[] price, int n) {
         int[] optimalPrice = new int[n + 1];
         optimalPrice[0] = 0;

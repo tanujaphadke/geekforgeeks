@@ -1,16 +1,16 @@
-package dynamic.lecture13_14;
+package dynamic.lecture15;
 
 public class LongestCommonSubsequence {
 
     /* Returns length of LCS for X[0..m-1], Y[0..n-1] */
     //Recursion
-    int lcs(char[] X, char[] Y, int m, int n) {
+    int lcsRecursion(char[] X, char[] Y, int m, int n) {
         if (m == 0 || n == 0)
             return 0;
         if (X[m - 1] == Y[n - 1])
-            return 1 + lcs(X, Y, m - 1, n - 1);
+            return 1 + lcsRecursion(X, Y, m - 1, n - 1);
         else
-            return max(lcs(X, Y, m, n - 1), lcs(X, Y, m - 1, n));
+            return max(lcsRecursion(X, Y, m, n - 1), lcsRecursion(X, Y, m - 1, n));
     }
 
     /* Returns length of LCS for X[0..m-1], Y[0..n-1] */
@@ -53,6 +53,6 @@ public class LongestCommonSubsequence {
         int n = Y.length;
 
         System.out.println("Length of LCS is" + " " +
-                lcs.lcs(X, Y, m, n));
+                lcs.lcsRecursion(X, Y, m, n));
     }
 }
