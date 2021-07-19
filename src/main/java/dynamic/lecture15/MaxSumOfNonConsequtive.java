@@ -85,17 +85,13 @@ public class MaxSumOfNonConsequtive {
     // no adjacent elements considered (Function uses extra space)
     public static int maxSumSubDP(int[] A) {
         int n = A.length;
-
         // base case
         if (n == 1) {
             return A[0];
         }
-
         // create an auxiliary array to store solution of sub-problems
         int[] dp = new int[n];
-
         // dp[i] stores the maximum sum possible till index i
-
         // trivial case
         dp[0] = A[0];
         dp[1] = Integer.max(A[0], A[1]);
@@ -111,7 +107,6 @@ public class MaxSumOfNonConsequtive {
             // if current element is more than max sum till current element
             dp[i] = Integer.max(dp[i], A[i]);
         }
-
         // return maximum sum
         return dp[n - 1];
     }
