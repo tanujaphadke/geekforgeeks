@@ -1,7 +1,6 @@
 package dynamic.lecture16;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class CoinExchange {
@@ -48,6 +47,7 @@ public class CoinExchange {
                     }
                     //We should not add changes to this list if it already exists. Since order does not matter
                     //we may end up in a situation where we have {2,3} and {3,2}
+                    //TBD:
                     solutions.addAll(changes);
                 }
             }
@@ -55,31 +55,20 @@ public class CoinExchange {
         return solutions;
     }
 
-    static long countWaysSpace(int S[], int lengthDenominations, int amount) {
-        //Time complexity of this function: O(mn)
-        //Space Complexity of this function: O(n)
-
-        // table[i] will be storing the number of solutions for value i. We need n+1 rows as the table is
-        // constructed in bottom up manner using the base case (n = 0)
-        long[] solution = new long[amount + 1];
-
-        // Initialize all table values as 0
-        Arrays.fill(solution, 0);   //O(n)
-
-        // Base case (If given value is 0)
-        solution[0] = 1;
-
-        // Pick all coins one by one and update the table[]
-        // values after the index greater than or equal to
-        // the value of the picked coin
-        for (int i = 0; i < lengthDenominations; i++)
-            for (int j = S[i]; j <= amount; j++)
-                solution[j] += solution[j - S[i]];
-
+    static long countWays( int amount, int denominations[]) {
+        int[] solution =  new int[amount +1 ];
+        solution[0] = 1 ;
+        for (int coin : denominations){
+            for ( int i =1 ; i <solution.length; i++){
+                if ( i >= coin ) {
+                    solution[i] = solution[i] + solution[i - coin ];
+                 }
+            }
+        }
         return solution[amount];
     }
 
-    public static int countWaysSpaceOptimized(int S[], int lengthDenominations, int amount) {
+    public static int countWaysSpaceOptimized(int S[],  int amount) {
         // table[i] will be storing the number of solutions for
         // value i. We need n+1 rows as the table is constructed
         // in bottom up manner using the base case (n = 0)
@@ -91,7 +80,7 @@ public class CoinExchange {
         // Pick all coins one by one and update the table[] values
         // after the index greater than or equal to the value of the
         // picked coin
-        for (int i = 0; i < lengthDenominations; i++)
+        for (int i = 0; i < S.length; i++)
             for (int j = S[i]; j <= amount; j++)
                 table[j] += table[j - S[i]];
 
@@ -111,8 +100,10 @@ public class CoinExchange {
 
 
         int arr[] = {1, 2, 3};
-        int lengthDenominations = arr.length;
         int amount = 4;
-        System.out.println(countWaysSpace(arr, lengthDenominations, amount));
+        System.out.println(countWaysSpaceOptimized(arr, amount));
+
+
+        System.out.println(" Count Ways for " + countWays(5, new int[]{1,2,5}));
     }
 }

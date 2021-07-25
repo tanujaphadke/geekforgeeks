@@ -8,7 +8,7 @@ import java.util.Comparator;
 // Greedy approach
 public class FractionalKnapSack {
     // function to get maximum value
-    private static double getMaxValue(int[] wt, int[] val, int capacity) {
+    private static double getMaxValue(int[] wt, int[] val, int remainingCapacity) {
         ItemValue[] itemValues = new ItemValue[wt.length];
 
         for (int i = 0; i < wt.length; i++) {
@@ -30,17 +30,17 @@ public class FractionalKnapSack {
             int curWt = (int) item.wt;
             int curVal = (int) item.val;
 
-            if (capacity - curWt >= 0) {
+            if (remainingCapacity - curWt >= 0) {
                 // this weight can be picked while
-                capacity = capacity - curWt;
+                remainingCapacity = remainingCapacity - curWt;
                 totalValue += curVal;
             } else {
                 // item cant be picked whole
                 double fraction
-                        = ((double) capacity / (double) curWt);
+                        = ((double) remainingCapacity / (double) curWt);
                 totalValue += (curVal * fraction);
-                capacity
-                        = (int) (capacity - (curWt * fraction));
+                remainingCapacity
+                        = (int) (remainingCapacity - (curWt * fraction));
                 break;
             }
         }
