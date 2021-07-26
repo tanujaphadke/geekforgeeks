@@ -98,10 +98,10 @@ public class CoinExchange {
             l.stream().forEach(c -> System.out.print(c + " "));
         });
 
-
+        System.out.println();
         int arr[] = {1, 2, 3};
         int amount = 4;
-        System.out.println(countWaysSpaceOptimized(arr, amount));
+        System.out.println("countWaysSpaceOptimized " + countWaysSpaceOptimized(arr, amount));
 
 
         System.out.println(" Count Ways for " + countWays(5, new int[]{1,2,5}));
