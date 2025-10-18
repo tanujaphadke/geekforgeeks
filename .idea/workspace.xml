@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="791e6165-ed65-4d0f-8818-85ecfce139c9" name="Default Changelist" comment="refacotr">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dailycode/ReverseString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dailycode/Toeplitz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jan2023/LookAndSaySequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tries/lecture20/Boggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tries/lecture20/Boggle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/geekforgeeks.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/CFG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/PredicateFilterStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/forkJoin/ForkBlur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/forkJoin/MaxFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/forkJoin/ThenApplyVsThenCompose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/red-tulips.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,25 +41,30 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="1t2Ss14gODd201pLqnHR9TY3YBK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ForkBlur.executor": "Debug",
+    "Application.GFG.executor": "Run",
+    "Application.PredicateFilterStream.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kaushikroy/geekforgeeks/src/main/java/java8features"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/java8features" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/java/linkedlist/lect5" />
       <recent name="$PROJECT_DIR$/src/main/java/trees" />
@@ -70,13 +80,52 @@
       <recent name="trees" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LookAndSaySequence">
+  <component name="RunManager" selected="Application.ForkBlur">
+    <configuration name="ForkBlur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8features.forkJoin.ForkBlur" />
+      <module name="geekforgeeks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8features.forkJoin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8features.GFG" />
+      <module name="geekforgeeks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8features.forkJoin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LookAndSaySequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jan2023.LookAndSaySequence" />
       <module name="solutions" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="jan2023.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PredicateFilterStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java8features.PredicateFilterStream" />
+      <module name="geekforgeeks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java8features.forkJoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,52 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Toeplitz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dailycode.Toeplitz" />
-      <module name="solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dailycode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrieTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tries.lecture20.TrieTree" />
-      <module name="solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tries.lecture20.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordLadderProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graphs.lecture18.WordLadderProblem" />
-      <module name="solutions" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="graphs.lecture18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ForkBlur" />
+        <item itemvalue="Application.GFG" />
+        <item itemvalue="Application.PredicateFilterStream" />
         <item itemvalue="Application.LookAndSaySequence" />
         <item itemvalue="Application.ReverseString" />
-        <item itemvalue="Application.Toeplitz" />
-        <item itemvalue="Application.TrieTree" />
-        <item itemvalue="Application.WordLadderProblem" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +185,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refacotr" />
@@ -521,6 +530,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/dailycode/ReverseString.java</url>
           <line>12</line>
           <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../Library/Java/JavaVirtualMachines/corretto-11.0.28/Contents/Home/lib/src.zip!/java.base/java/io/File.java</url>
+          <line>772</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/java8features/forkJoin/ForkBlur.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/java8features/forkJoin/ForkBlur.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="146" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
