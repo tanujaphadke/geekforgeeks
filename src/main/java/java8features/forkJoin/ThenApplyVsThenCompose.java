@@ -1,9 +1,7 @@
 package java8features.forkJoin;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.Comparator;
+import java.util.concurrent.*;
 
 public class ThenApplyVsThenCompose {
 
@@ -87,4 +85,9 @@ public class ThenApplyVsThenCompose {
      * returns a CompletableFuture,
      * and it waits for that new future to complete before completing its own, effectively flattening the structure.
      */
+
+    //Testing how to write functional interface callable
+    Comparator<String> cmp = (a, b) -> a.compareTo(b);
+    Callable<String> c = () ->  "Callable is Called";//Only a single expression which is a String and callable returned a String
+    Runnable r = () -> System.out.println("Runnable called");// Runnable returns nothing  tehre is is only 1 statement so U dont need
 }

@@ -3,12 +3,12 @@ package java8features;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 //https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html
-public class PredicateFilterStream {
+//good video https://www.youtube.com/watch?v=PMhrMDHFFW4&t=211s
+public class PredicateFilterStream2 {
     //we can define multi Line Predicate
     static Predicate<Integer> isEven = number -> {
         return number % 2 == 0;
@@ -60,7 +60,8 @@ public class PredicateFilterStream {
         List<Employee> conditionalEmployees =
                 employees.stream().filter(ageLessThan30).collect(Collectors.toList());
         // Group employees by department
-        Map<String, List<Employee>> byDept = employees.stream().collect(Collectors.groupingBy(Employee:: getDepartment));
+        Map<String, List<Employee>> byDept = employees.stream().
+                collect(Collectors.groupingBy(Employee:: getDepartment));
         System.out.println(byDept);
 
     }
@@ -70,61 +71,4 @@ public class PredicateFilterStream {
 
 }
 
-
-class Employee {
-    private String name;
-    private int age;
-    private String department;
-    private Status status;
-    public Employee(String name, int age, String department, Status status) {
-        this.name = name;
-        this.age = age;
-        this.department = department;
-        this.status = status;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", department='" + department + '\'' +
-                ", status=" + status +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return age == employee.age &&
-                Objects.equals(name, employee.name) &&
-                Objects.equals(department, employee.department) &&
-                status == employee.status;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age, department, status);
-    }
-
-    enum Status {ACTIVE, INACTIVE, PROBATION}
-}
 
