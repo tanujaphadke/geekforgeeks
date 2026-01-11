@@ -47,7 +47,6 @@ public class PredicateFilterStream {
         );
         //Print employees who are in IT or under 30 yeasrs
         Predicate<Employee> inIT = employee -> employee.getDepartment().equalsIgnoreCase("IT");
-
         Predicate<Employee> active = employee -> {
             return employee.getStatus().equals(Employee.Status.ACTIVE);
         };

@@ -1,9 +1,6 @@
 package java8features;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class TestingStream {
@@ -87,6 +84,19 @@ public class TestingStream {
 
         int sescondLargest = nums.get(nums.size() - 2);
         System.out.println(sescondLargest);
+        //BElow is the correct solution to find the second largest.
+        List< Integer > numbers = Arrays.asList(1, 17, 54, 14, 14, 33, 45, -11);
+        Optional<Integer> secondLargest = numbers.stream()
+                .distinct() // Remove duplicates
+                .sorted(Comparator.reverseOrder()) // Sort in descending order
+                .skip(1) // Skip the largest element
+                .findFirst(); // Find the second largest
+
+        if (secondLargest.isPresent()) {
+            System.out.println("The second largest element is: " + secondLargest.get());
+        } else {
+            System.out.println("Could not find a second largest element (list might be too small or empty).");
+        }
        return sescondLargest;
     }
 
