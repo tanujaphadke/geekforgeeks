@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="791e6165-ed65-4d0f-8818-85ecfce139c9" name="Default Changelist" comment="refacotr">
-      <change afterPath="$PROJECT_DIR$/src/main/java/arrays/lect1/java8/MaximumOnLeftAndRightSide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/arrays/lect1/java8/ProductOfRemaining.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/arrays/lect1/java8/TrappingRainWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/CFGCompletableFuture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/java8features/MainStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zsjsu/lecture1/Merge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/geekforgeeks/java8features/red-tulips.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/geekforgeeks/java8features/red-tulips.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java8features/CFG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/java8features/CFG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java8features/PredicateFilterStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/java8features/PredicateFilterStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/java8features/TestingStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/java8features/TestingStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zsjsu/lecture1/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zsjsu/lecture1/Merge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CFG.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ForkBlur.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.GFG.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Java8New.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinkedListPalindrome.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Palindrome.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PredicateFilterStream.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Testcalss.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestingStream.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kaushikroy/geekforgeeks/src/main/java/arrays/lect1/java8&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CFG.executor": "Run",
+    "Application.ForkBlur.executor": "Debug",
+    "Application.GFG.executor": "Run",
+    "Application.Java8New.executor": "Run",
+    "Application.LinkedListPalindrome.executor": "Debug",
+    "Application.Merge.executor": "Run",
+    "Application.Palindrome.executor": "Run",
+    "Application.PredicateFilterStream.executor": "Debug",
+    "Application.Testcalss.executor": "Run",
+    "Application.TestingStream.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/kaushikroy/geekforgeeks/src/main/java/arrays/lect1/java8"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/arrays/lect1/java8" />
@@ -90,7 +81,7 @@
       <recent name="linkedlist.lect5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CFG">
+  <component name="RunManager" selected="Application.Merge">
     <configuration name="CFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="java8features.CFG" />
       <module name="geekforgeeks" />
@@ -117,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java8features.Palindrome" />
+    <configuration name="Merge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zsjsu.lecture1.Merge" />
       <module name="geekforgeeks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java8features.*" />
+          <option name="PATTERN" value="zsjsu.lecture1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Merge" />
         <item itemvalue="Application.CFG" />
         <item itemvalue="Application.TestingStream" />
         <item itemvalue="Application.Testcalss" />
         <item itemvalue="Application.Java8New" />
-        <item itemvalue="Application.Palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -590,6 +581,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/java8features/TestingStream.java</url>
           <line>47</line>
           <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zsjsu/lecture1/Merge.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="158" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
